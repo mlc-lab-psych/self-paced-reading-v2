@@ -1,0 +1,20 @@
+[
+{
+    "type": "basic",
+    "question": "Did the teacher finish grading the homework before dinner?"
+},
+{
+    "type": "basic",
+    "question": "Which recipe has the chef selected for today’s special?"
+},
+{
+    "type": "basic",
+    "question": "What surprised the audience at the end of the show?"
+},
+{
+    "type": "comprehension",
+    "question": "Did the painter finish the portrait before sunset?",
+    "follow_up": "Was the artist working on a painting?",
+    "correct": true
+}
+]

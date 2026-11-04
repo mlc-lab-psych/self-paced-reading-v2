@@ -1,0 +1,22 @@
+services:
+  redis:
+    image: redis:7
+    container_name: self-paced-reading-v2-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app_net
+  self-paced-reading:
+    build: 
+      context: .
+      dockerfile: Containerfile
+    container_name: self-paced-reading-v2
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    networks:
+      - app_net
+
+networks:
+  app_net:
